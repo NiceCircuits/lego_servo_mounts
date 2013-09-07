@@ -1,6 +1,6 @@
 infinity = 1000;
 
-include <m_lego_pin_hole.scad>
+include <lego_pin_hole.scad>
 
 base_LL = 6; // length of base in lego units (8mm)
 base_WL = 2;

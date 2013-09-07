@@ -1,5 +1,5 @@
 use <servo_arm_base.scad>
-use <m_lego_pin_hole.scad>
+use <lego_pin_hole.scad>
 lego=8;
 infinity=1000;
 d_base=10;
