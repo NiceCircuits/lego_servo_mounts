@@ -1,2 +1,4 @@
 /3D/*.gcode
 *.s##
+
+/3D/test.scad

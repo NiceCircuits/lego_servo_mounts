@@ -5,6 +5,7 @@ lego_flange_depth = 0.8; // depth of hole for lego pin flange
 lego_clearance = 0.2; // clearance for moving joints, i.e. pin and hole
 r1 = (lego_pin+lego_clearance)/2;
 r2 = (lego_flange+lego_clearance)/2;
+infinity=1000;
 
 module lego_pin_hole(h, pos, rot=[0,0,0], extend=infinity, chamfer=0, teardrop=0)
 {
