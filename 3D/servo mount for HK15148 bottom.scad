@@ -27,7 +27,7 @@ brim = 0; // enable brim?
 
 angles_lookup = [0, 90, 270, 180];
 
-module servo_mount()
+module servoMountHK15148Bottom()
 {
 	difference()
 	{
@@ -67,6 +67,6 @@ module servo_mount()
 }
 
 $fn = 50;
-servo_mount();
+servoMountHK15148Bottom();
 
 
