@@ -11,11 +11,12 @@ side_wall_stopL = 2;
 
 servo_L = 28; // length of servo in mm
 servo_W = 14;
-servo_H = 10; // height of servo cavity in mm
+servo_H = 10.3; // height of servo cavity in mm
 servo_H_front = 8.5; // height of front and back walls
+ServoXOffset=-0.8; // offset of servo cavity
 
 step_L = 10;
-step_H = 3;
+step_H = 3; 
 
 screw_D = 1.5; // diameter of screw hole
 screw_H = 7; // height of screw hole
@@ -39,13 +40,14 @@ module servoMountHK15148Top()
 				translate([0, 0, servo_H/2])
 					cube([base_LL*lego, base_WL*lego, servo_H], center=true);
 				// servo cavity
-				cube([servo_L, servo_W, infinity], center=true);
+				translate([ServoXOffset,0,0])
+					cube([servo_L, servo_W, infinity], center=true);
 				// lower front and back walls
 				translate([0, 0, infinity/2+servo_H_front])
 					cube([infinity, servo_W, infinity], center = true);
 			}
 			// step
-			translate([(servo_L-step_L)/2, 0, step_H/2])
+			translate([(servo_L-step_L)/2+ServoXOffset, 0, step_H/2])
 				cube([step_L, servo_W, step_H], center = true);
 		}
 		// pin holes
@@ -59,7 +61,7 @@ module servoMountHK15148Top()
 		// screw holes
 		for (i=[1,-1])
 		{
-			translate([(screw_space/2 - tan(screw_angle)*screw_H)*i, 0, servo_H_front - screw_H])
+			translate([(screw_space/2 - tan(screw_angle)*screw_H)*i+ServoXOffset, 0, servo_H_front - screw_H])
 				rotate([0,screw_angle*i,0])
 					cylinder(h=infinity, r=screw_D/2);
 		}
