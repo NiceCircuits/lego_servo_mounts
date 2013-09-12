@@ -20,7 +20,7 @@ step_H = 3;
 
 screw_D = 6; // diameter of screw hole
 screw_D2 = 3; // diameter of small screw hole
-screw_H = 7.5; // height of screw hole
+screw_H = 7.8; // height(depth) of screw hole
 screw_space = 34.5; // space between screw holes
 
 V_fillet = 4; // fillet of vertical edge in mm
@@ -71,7 +71,7 @@ module servoMountHK15148Top()
 				cylinder(h=infinity, r=screw_D2/2);
 		}
 	// cross section in Y axis - just for debug
-	*translate([0,-infinity/2,0])
+	translate([0,-infinity/2,0])
 		cube([infinity,infinity,infinity], center=true);
 	// cross section in X axis - just for debug
 	*translate([infinity/2,0,0])
