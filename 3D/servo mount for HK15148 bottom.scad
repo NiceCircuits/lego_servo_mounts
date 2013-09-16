@@ -26,10 +26,11 @@ ServoFlangeH=1.8;
 TopFlangeH=0.7;
 ChamferL=1.3;
 ChamferH=5;
+BrimExtend=7;
 
 angles_lookup = [0, 90, 270, 180];
 
-module servoMountHK15148Bottom()
+module servoMountHK15148Bottom(brim=0)
 {
 	union()
 	{
@@ -41,6 +42,9 @@ module servoMountHK15148Bottom()
 				translate([0,0,-base_HL*lego/2+servo_H])
 					cube([base_LL*lego,base_WL*lego,base_HL*lego], center=true);
 				// brim
+				for(x=[-1,1])
+					translate([base_LL*lego/2*x-BrimExtend, -BrimExtend-base_WL*lego/2, -base_HL*lego+servo_H])
+						cube([2*BrimExtend, 2*BrimExtend+base_WL*lego, 0.2]);
 			}
 			// servo cavity
 			translate([-servo_L/2+ServoXOffset,-servo_W/2,0])
@@ -75,7 +79,7 @@ module servoMountHK15148Bottom()
 				linear_extrude(height=servo_W, center=true)
 					polygon([[-servo_L/2+ServoXOffset, servo_H-ChamferH], [servo_L/2+ServoXOffset, servo_H-ChamferH], [servo_L/2+ServoXOffset+ChamferL*2, servo_H+ChamferH], [-servo_L/2+ServoXOffset-ChamferL*2, servo_H+ChamferH]]);
 			// cross section in Y axis - just for debug
-			translate([0,-infinity/2,0])
+			*translate([0,-infinity/2,0])
 				cube([infinity,infinity,infinity], center=true);
 			// cross section in X axis - just for debug
 			*translate([infinity/2+20,0,0])
@@ -87,7 +91,7 @@ module servoMountHK15148Bottom()
 	}
 }
 // debug screws
-#for(x=[-1,1])
+*for(x=[-1,1])
 	rotate()
 		translate([HolesXDist*x/2+ServoXOffset, 0, servo_H+ServoFlangeH/2])
 			rotate([0,HoleAngle*x,0])
@@ -101,6 +105,6 @@ module servoMountHK15148Bottom()
 			
 
 $fn = 50;
-servoMountHK15148Bottom();
+servoMountHK15148Bottom(brim=1);
 
 
