@@ -11,7 +11,7 @@ module lego_servo_arm(teeth=25)
 	{
 		union()
 		{
-			servo_arm_base(d=d_base, teeth=teeth);
+			servo_arm_base(d=d_base, teeth=teeth, film=1);
 			difference()
 			{
 				cylinder(r=d/2, h=lego/2);
@@ -20,8 +20,9 @@ module lego_servo_arm(teeth=25)
 		}
 		for(i=[0:5])
 			rotate([0,0,360/6*i])
-				lego_pin_hole(1/2, pos=[lego, 0, lego/4], rot=[0,90,0], chamfer=1);
+				lego_pin_hole(1/2, pos=[lego, 0, lego/4], rot=[0,90,0], film=1, extend=0.1);
 	}
 }
 
+$fn=50;
 lego_servo_arm(); 

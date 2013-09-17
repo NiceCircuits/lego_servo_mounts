@@ -7,7 +7,7 @@ r1 = (lego_pin+lego_clearance)/2;
 r2 = (lego_flange+lego_clearance)/2;
 infinity=1000;
 
-module lego_pin_hole(h, pos, rot=[0,0,0], extend=infinity, chamfer=0, teardrop=0)
+module lego_pin_hole(h, pos, rot=[0,0,0], extend=infinity, chamfer=0, teardrop=0, film=0)
 {
 	chamfer_internal_offset=0.2;
 	chamfer_external_width=0.5;
@@ -19,7 +19,8 @@ module lego_pin_hole(h, pos, rot=[0,0,0], extend=infinity, chamfer=0, teardrop=0
 			{
 				union()
 				{
-					cylinder(h=h*lego+2*extend, r=r1, center=true);
+					translate([0,0,film*0.2])
+						cylinder(h=h*lego-lego_flange_depth*(1+film), r=r1, center=true);
 					for(i = [-1,1])
 					{
 						translate([0, 0, ((h*lego+extend-lego_flange_depth)/2) * i])
@@ -65,4 +66,6 @@ module lego_pin_hole(h, pos, rot=[0,0,0], extend=infinity, chamfer=0, teardrop=0
 		}
 	}
 }
- 
+
+$fn=50;
+lego_pin_hole(h=1, pos=[0,0,0], extend=0.1, film=0);
