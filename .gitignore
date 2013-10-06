@@ -1,4 +1,6 @@
 /3D/*.gcode
-*.s##
-
+*.s#?
+*.b#?
 /3D/test.scad
+
+
