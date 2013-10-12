@@ -5,13 +5,13 @@ infinity=1000;
 d_base=10;
 d = lego*3;
 
-module lego_servo_arm(teeth=25)
+module lego_servo_arm(teeth=25, ds1=6, ds2=5.5)
 {
 	difference()
 	{
 		union()
 		{
-			servo_arm_base(d=d_base, teeth=teeth, film=1);
+			servo_arm_base(d=d_base, h=8, ds1=ds1, ds2=ds2, hs=4, teeth=teeth, d_hole=3, d_head_hole=6, h_head_hole=2, chamfer=0, film=1);
 			difference()
 			{
 				cylinder(r=d/2, h=lego/2);

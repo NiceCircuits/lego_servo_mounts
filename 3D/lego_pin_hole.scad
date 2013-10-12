@@ -68,4 +68,4 @@ module lego_pin_hole(h, pos, rot=[0,0,0], extend=infinity, chamfer=0, teardrop=0
 }
 
 $fn=50;
-lego_pin_hole(h=1, pos=[0,0,0], extend=0.1, film=0);
+*lego_pin_hole(h=1, pos=[0,0,0], extend=0.1, film=0);

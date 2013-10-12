@@ -6,9 +6,9 @@ base_LL = 6; // length of base in lego units (8mm)
 base_WL = 2;
 base_HL = 3+1.7/lego;
 
-servo_L = 23; // length of servo in mm
-servo_W = 12.5;
-servo_H = 18.7; // height of servo cavity in mm
+servo_L = 29; // length of servo in mm
+servo_W = 14;
+servo_H = 19.7; // height of servo cavity in mm
 ServoFullH=30;
 ServoXOffset=0.8+0.5; // offset of servo cavity
 ServoCableLeadW=lego;

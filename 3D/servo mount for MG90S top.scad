@@ -12,9 +12,9 @@ side_wall_stopL = 2;
 servo_L = 28; // length of servo in mm
 servo_W = 14;
 servo_H = 10.3; // height of servo cavity in mm
-servo_H_front = 8.5; // height of front and back walls
+servo_H_front = 7.5; // height of front and back walls
 ServoXOffset=-1.2; // offset of servo cavity
-ServoFlangeL=6.5;
+ServoFlangeL=3;
 
 step_L = 10;
 step_H = 3; 
@@ -56,7 +56,7 @@ module servoMountMG90STop(brim=0)
 			translate([(servo_L-step_L+1)/2+ServoXOffset, 0, step_H/2])
 				cube([step_L+1, base_WL*lego, step_H], center = true);
 			// screw holes - additional fill for better print
-			for (i=[1,-1])
+			*for (i=[1,-1])
 				translate([(screw_space/2 )*i+ServoXOffset, 0, screw_H])
 					cylinder(h=servo_H_front-screw_H, r=screw_D/2);
 			// brim
@@ -65,7 +65,7 @@ module servoMountMG90STop(brim=0)
 					cube([2*BrimExtend, 2*BrimExtend+base_WL*lego, 0.2]);
 		}
 		// screw holes
-		for (i=[1,-1])
+		*for (i=[1,-1])
 		{
 			translate([(screw_space/2 )*i+ServoXOffset, 0, -infinity + screw_H])
 				cylinder(h=infinity, r=screw_D/2);
