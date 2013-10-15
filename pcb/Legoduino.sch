@@ -4930,7 +4930,6 @@ Stable with 2*1uF ceramic capacitors</description>
 <part name="D3" library="PN_default" deviceset="LED" device="0805" value="LED"/>
 <part name="D4" library="PN_default" deviceset="LED" device="0805" value="DATA"/>
 <part name="D5" library="PN_default" deviceset="LED" device="0805" value="CONN"/>
-<part name="GND3" library="PN_default" deviceset="GND" device=""/>
 <part name="GND4" library="PN_default" deviceset="GND" device=""/>
 <part name="IC4" library="PN_microcontrollers" deviceset="ATMEGA2560" device="AU" technology="-16"/>
 <part name="IC1" library="PN_IC" deviceset="NCP3170" device="DR2G" technology="A"/>
@@ -5044,6 +5043,7 @@ Stable with 2*1uF ceramic capacitors</description>
 <part name="R25" library="PN_default" deviceset="R" device="0603" value="N.C."/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="R27" library="PN_default" deviceset="R" device="0805" value="0R"/>
+<part name="U$4" library="PN_default" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5195,15 +5195,14 @@ Stable with 2*1uF ceramic capacitors</description>
 <instance part="R5" gate="G$1" x="391.16" y="149.86" rot="R90"/>
 <instance part="R6" gate="G$1" x="398.78" y="149.86" rot="R90"/>
 <instance part="R7" gate="G$1" x="302.26" y="124.46" rot="R270"/>
-<instance part="R8" gate="G$1" x="353.06" y="63.5" rot="R90"/>
+<instance part="R8" gate="G$1" x="355.6" y="71.12" rot="R180"/>
 <instance part="R9" gate="G$1" x="340.36" y="63.5" rot="R90"/>
 <instance part="R10" gate="G$1" x="350.52" y="91.44" rot="MR180"/>
 <instance part="R11" gate="G$1" x="342.9" y="93.98" rot="MR180"/>
 <instance part="D2" gate="G$1" x="396.24" y="215.9" rot="R90"/>
 <instance part="D3" gate="G$1" x="396.24" y="205.74" rot="R90"/>
-<instance part="D4" gate="G$1" x="353.06" y="53.34"/>
+<instance part="D4" gate="G$1" x="360.68" y="76.2"/>
 <instance part="D5" gate="G$1" x="340.36" y="53.34"/>
-<instance part="GND3" gate="G$1" x="353.06" y="48.26"/>
 <instance part="GND4" gate="G$1" x="340.36" y="48.26"/>
 <instance part="IC4" gate="1" x="154.94" y="149.86"/>
 <instance part="IC1" gate="G$1" x="104.14" y="279.4"/>
@@ -5347,6 +5346,7 @@ Stable with 2*1uF ceramic capacitors</description>
 <attribute name="VALUE" x="194.945" y="294.64" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R27" gate="G$1" x="320.04" y="162.56" rot="R90"/>
+<instance part="U$4" gate="G$1" x="360.68" y="83.82"/>
 </instances>
 <busses>
 </busses>
@@ -5485,10 +5485,6 @@ Stable with 2*1uF ceramic capacitors</description>
 <segment>
 <pinref part="GND4" gate="G$1" pin="GND"/>
 <pinref part="D5" gate="G$1" pin="K"/>
-</segment>
-<segment>
-<pinref part="GND3" gate="G$1" pin="GND"/>
-<pinref part="D4" gate="G$1" pin="K"/>
 </segment>
 <segment>
 <pinref part="GND15" gate="G$1" pin="GND"/>
@@ -6025,6 +6021,10 @@ Stable with 2*1uF ceramic capacitors</description>
 <wire x1="426.72" y1="63.5" x2="426.72" y2="60.96" width="0.1524" layer="91"/>
 <junction x="426.72" y="60.96"/>
 </segment>
+<segment>
+<pinref part="D4" gate="G$1" pin="A"/>
+<pinref part="U$4" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="20" class="0">
 <segment>
@@ -6473,16 +6473,8 @@ Stable with 2*1uF ceramic capacitors</description>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="353.06" y1="66.04" x2="353.06" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="353.06" y1="71.12" x2="337.82" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="GPIO8(RX/TX)"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="D4" gate="G$1" pin="A"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="353.06" y1="60.96" x2="353.06" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -7080,6 +7072,14 @@ Stable with 2*1uF ceramic capacitors</description>
 <wire x1="76.2" y1="78.74" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
 <label x="66.04" y="81.28" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="D4" gate="G$1" pin="K"/>
+<wire x1="358.14" y1="71.12" x2="360.68" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="71.12" x2="360.68" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
