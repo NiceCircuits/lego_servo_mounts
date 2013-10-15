@@ -4823,6 +4823,11 @@ Stable with 2*1uF ceramic capacitors</description>
 <wire x1="12.8" y1="-4.9" x2="12.8" y2="-6.7" width="0.2032" layer="21"/>
 <text x="-12.70000625" y="7.100003125" size="1.27" layer="25">&gt;NAME</text>
 <text x="-12.70000625" y="-8.300003125" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-13" y1="-7" x2="-6.6" y2="7" layer="40"/>
+<rectangle x1="-13" y1="-7" x2="-6.6" y2="7" layer="39"/>
+<rectangle x1="-13" y1="-7" x2="-6.6" y2="7" layer="41"/>
+<rectangle x1="-13" y1="-7" x2="-6.6" y2="7" layer="42"/>
+<rectangle x1="-13" y1="-7" x2="-6.6" y2="7" layer="43"/>
 </package>
 </packages>
 <symbols>
