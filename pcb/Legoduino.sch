@@ -4969,7 +4969,7 @@ Stable with 2*1uF ceramic capacitors</description>
 <part name="C20" library="PN_default" deviceset="C" device="0603" value="*"/>
 <part name="C18" library="PN_default" deviceset="C" device="0603" value="*"/>
 <part name="GND26" library="PN_default" deviceset="GND" device=""/>
-<part name="R16" library="PN_default" deviceset="R" device="0603" value="560k"/>
+<part name="R16" library="PN_default" deviceset="R" device="0603" value="390k"/>
 <part name="GND27" library="PN_default" deviceset="GND" device=""/>
 <part name="IC5" library="PN_opto" deviceset="UG-2864HSWEG01_SPI" device=""/>
 <part name="R17" library="PN_default" deviceset="R" device="0603" value="10k"/>
