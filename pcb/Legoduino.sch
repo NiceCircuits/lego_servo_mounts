@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="25" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="25" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -5062,31 +5062,28 @@ Stable with 2*1uF ceramic capacitors</description>
 <text x="243.205" y="197.485" size="1.778" layer="91">11</text>
 <text x="243.205" y="200.025" size="1.778" layer="91">12</text>
 <text x="243.205" y="202.565" size="1.778" layer="91">13</text>
-<text x="208.28" y="203.2" size="1.6764" layer="91">pwm</text>
-<text x="208.28" y="200.66" size="1.6764" layer="91">pwm</text>
-<text x="208.28" y="198.12" size="1.6764" layer="91">pwm</text>
-<text x="208.28" y="195.58" size="1.6764" layer="91">pwm</text>
+<text x="203.2" y="203.2" size="1.6764" layer="91">pwm</text>
+<text x="203.2" y="200.66" size="1.6764" layer="91">pwm</text>
+<text x="203.2" y="198.12" size="1.6764" layer="91">pwm</text>
+<text x="203.2" y="195.58" size="1.6764" layer="91">pwm</text>
 <text x="200.66" y="129.54" size="1.6764" layer="91">pwm</text>
 <text x="200.66" y="127" size="1.6764" layer="91">pwm</text>
 <text x="200.66" y="124.46" size="1.6764" layer="91">pwm</text>
 <text x="200.025" y="90.17" size="1.6764" layer="91">pwm</text>
-<text x="100.33" y="92.71" size="1.6764" layer="91">pwm</text>
-<text x="100.33" y="90.17" size="1.6764" layer="91">pwm</text>
-<text x="100.33" y="87.63" size="1.6764" layer="91">pwm</text>
-<text x="100.33" y="85.09" size="1.6764" layer="91">pwm</text>
+<text x="100.33" y="91.44" size="1.6764" layer="91">pwm</text>
+<text x="100.33" y="88.9" size="1.6764" layer="91">pwm</text>
+<text x="100.33" y="86.36" size="1.6764" layer="91">pwm</text>
+<text x="100.33" y="83.82" size="1.6764" layer="91">pwm</text>
 <text x="109.22" y="157.48" size="1.6764" layer="91">pwm</text>
 <text x="109.22" y="154.94" size="1.6764" layer="91">pwm</text>
 <text x="109.22" y="152.4" size="1.6764" layer="91">pwm</text>
 <text x="200.66" y="119.38" size="1.6764" layer="91">(TX0)</text>
 <text x="200.66" y="116.84" size="1.6764" layer="91">(RX0)</text>
-<text x="234.95" y="135.89" size="1.6764" layer="91">pwm</text>
-<text x="234.95" y="133.35" size="1.6764" layer="91">pwm</text>
-<text x="234.95" y="123.19" size="1.6764" layer="91">pwm</text>
+<text x="233.68" y="132.08" size="1.6764" layer="91">pwm</text>
 <text x="226.06" y="193.04" size="1.6764" layer="91">pwm</text>
-<text x="226.06" y="190.5" size="1.6764" layer="91">pwm</text>
-<text x="234.95" y="130.81" size="1.6764" layer="91">pwm</text>
-<text x="234.95" y="128.27" size="1.6764" layer="91">pwm</text>
-<text x="234.95" y="125.73" size="1.6764" layer="91">pwm</text>
+<text x="226.06" y="195.58" size="1.6764" layer="91">pwm</text>
+<text x="233.68" y="129.54" size="1.6764" layer="91">pwm</text>
+<text x="233.68" y="124.46" size="1.6764" layer="91">pwm</text>
 <text x="340.36" y="208.28" size="1.6764" layer="91">pwm</text>
 <text x="375.92" y="274.32" size="1.6764" layer="91">pwm</text>
 <text x="312.42" y="276.86" size="1.6764" layer="91">pwm</text>
@@ -5101,8 +5098,6 @@ Stable with 2*1uF ceramic capacitors</description>
 <text x="116.84" y="104.14" size="1.778" layer="91">-</text>
 <text x="114.3" y="101.6" size="1.778" layer="91">14</text>
 <text x="114.3" y="99.06" size="1.778" layer="91">15</text>
-<text x="114.3" y="78.74" size="1.778" layer="91">16</text>
-<text x="114.3" y="76.2" size="1.778" layer="91">17</text>
 <text x="193.04" y="81.28" size="1.778" layer="91">39</text>
 <text x="193.04" y="78.74" size="1.778" layer="91">40</text>
 <text x="193.04" y="76.2" size="1.778" layer="91">41</text>
@@ -5120,9 +5115,13 @@ Stable with 2*1uF ceramic capacitors</description>
 <text x="193.04" y="167.64" size="1.778" layer="91">35</text>
 <text x="193.04" y="165.1" size="1.778" layer="91">36</text>
 <text x="193.04" y="162.56" size="1.778" layer="91">37</text>
-<text x="193.04" y="185.42" size="1.778" layer="91">53</text>
 <text x="193.04" y="215.9" size="1.778" layer="91">25</text>
 <text x="193.04" y="223.52" size="1.778" layer="91">28</text>
+<text x="226.06" y="198.12" size="1.6764" layer="91">pwm</text>
+<text x="340.36" y="205.74" size="1.6764" layer="91">pwm</text>
+<text x="340.36" y="203.2" size="1.6764" layer="91">pwm</text>
+<text x="340.36" y="200.66" size="1.6764" layer="91">pwm</text>
+<text x="340.36" y="198.12" size="1.6764" layer="91">pwm</text>
 </plain>
 <instances>
 <instance part="P+1" gate="1" x="416.56" y="190.5" smashed="yes">
@@ -6200,55 +6199,52 @@ Stable with 2*1uF ceramic capacitors</description>
 <wire x1="246.38" y1="274.32" x2="220.98" y2="274.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="11" class="0">
-<segment>
-<wire x1="190.5" y1="198.12" x2="215.9" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="198.12" x2="218.44" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="198.12" x2="215.9" y2="198.12" width="0.1524" layer="91"/>
-<label x="215.9" y="198.755" size="1.6764" layer="95"/>
-<pinref part="JP6" gate="G$1" pin="7"/>
-<pinref part="IC4" gate="1" pin="(OC1A/PCINT5)PB5"/>
-</segment>
-</net>
 <net name="10" class="0">
 <segment>
-<wire x1="190.5" y1="195.58" x2="213.36" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="195.58" x2="236.22" y2="195.58" width="0.1524" layer="91"/>
-<label x="215.9" y="196.215" size="1.6764" layer="95"/>
+<wire x1="215.9" y1="195.58" x2="236.22" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="G$1" pin="8"/>
-<pinref part="IC4" gate="1" pin="(OC2A/PCINT4)PB4"/>
+<label x="215.9" y="195.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="1" pin="(OC1B/PCINT6)PB6"/>
+<wire x1="190.5" y1="200.66" x2="208.28" y2="200.66" width="0.1524" layer="91"/>
+<label x="195.58" y="200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3" class="0">
 <segment>
-<wire x1="213.36" y1="129.54" x2="190.5" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="124.46" x2="213.36" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="124.46" x2="213.36" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="124.46" x2="226.06" y2="124.46" width="0.1524" layer="91"/>
 <label x="226.06" y="125.095" size="1.778" layer="95"/>
 <pinref part="PWML" gate="G$1" pin="4"/>
-<pinref part="IC4" gate="1" pin="(OC3C/INT5)PE5"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="1" pin="PH4(OC4B)"/>
+<wire x1="119.38" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
+<label x="109.22" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="2" class="0">
 <segment>
-<wire x1="210.82" y1="127" x2="190.5" y2="127" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="127" x2="210.82" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="121.92" x2="243.84" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="121.92" x2="243.84" y2="121.92" width="0.1524" layer="91"/>
 <label x="226.06" y="122.555" size="1.778" layer="95"/>
 <pinref part="PWML" gate="G$1" pin="3"/>
-<pinref part="IC4" gate="1" pin="(OC3B/INT4)PE4"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="1" pin="PH0(RXD2)"/>
+<wire x1="119.38" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
+<label x="101.6" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5" class="0">
 <segment>
-<wire x1="215.9" y1="132.08" x2="208.28" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="132.08" x2="208.28" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="124.46" x2="190.5" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="129.54" x2="215.9" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="129.54" x2="215.9" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="129.54" x2="226.06" y2="129.54" width="0.1524" layer="91"/>
 <label x="226.06" y="130.175" size="1.778" layer="95"/>
 <pinref part="PWML" gate="G$1" pin="6"/>
-<pinref part="IC4" gate="1" pin="(OC3A/AIN1)PE3"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="1" pin="PH5(OC4C)"/>
+<wire x1="119.38" y1="88.9" x2="96.52" y2="88.9" width="0.1524" layer="91"/>
+<label x="109.22" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="1" class="0">
@@ -6302,103 +6298,78 @@ Stable with 2*1uF ceramic capacitors</description>
 <pinref part="D3" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="12" class="0">
-<segment>
-<wire x1="190.5" y1="200.66" x2="218.44" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="200.66" x2="218.44" y2="200.66" width="0.1524" layer="91"/>
-<label x="215.9" y="201.295" size="1.6764" layer="95"/>
-<pinref part="JP6" gate="G$1" pin="6"/>
-<pinref part="IC4" gate="1" pin="(OC1B/PCINT6)PB6"/>
-</segment>
-</net>
 <net name="6" class="0">
-<segment>
-<wire x1="96.52" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
-<label x="109.22" y="84.455" size="1.778" layer="95"/>
-<pinref part="IC4" gate="1" pin="PH3(OC4A)"/>
-</segment>
 <segment>
 <wire x1="243.84" y1="132.08" x2="226.06" y2="132.08" width="0.1524" layer="91"/>
 <label x="226.695" y="132.715" size="1.778" layer="95"/>
 <pinref part="PWML" gate="G$1" pin="7"/>
 </segment>
+<segment>
+<pinref part="IC4" gate="1" pin="PH6(OC2B)"/>
+<wire x1="119.38" y1="91.44" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
+<label x="109.22" y="91.44" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="7" class="0">
-<segment>
-<wire x1="96.52" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
-<label x="109.22" y="86.995" size="1.778" layer="95"/>
-<pinref part="IC4" gate="1" pin="PH4(OC4B)"/>
-</segment>
 <segment>
 <wire x1="243.84" y1="134.62" x2="226.06" y2="134.62" width="0.1524" layer="91"/>
 <label x="226.695" y="135.255" size="1.778" layer="95"/>
 <pinref part="PWML" gate="G$1" pin="8"/>
 </segment>
+<segment>
+<pinref part="IC4" gate="1" pin="PH2(XCK2)"/>
+<wire x1="119.38" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
+<label x="101.6" y="81.28" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="8" class="0">
 <segment>
-<wire x1="96.52" y1="88.9" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
-<label x="109.22" y="89.535" size="1.778" layer="95"/>
-<pinref part="IC4" gate="1" pin="PH5(OC4C)"/>
-</segment>
-<segment>
 <wire x1="236.22" y1="190.5" x2="215.9" y2="190.5" width="0.1524" layer="91"/>
-<label x="217.17" y="191.135" size="1.778" layer="95"/>
 <pinref part="JP6" gate="G$1" pin="10"/>
+<label x="215.9" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="9" class="0">
 <segment>
-<wire x1="96.52" y1="91.44" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
-<label x="109.22" y="92.075" size="1.778" layer="95"/>
-<pinref part="IC4" gate="1" pin="PH6(OC2B)"/>
+<wire x1="215.9" y1="193.04" x2="236.22" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="JP6" gate="G$1" pin="9"/>
+<label x="215.9" y="193.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="215.9" y1="193.04" x2="236.22" y2="193.04" width="0.1524" layer="91"/>
-<label x="217.17" y="193.675" size="1.778" layer="95"/>
-<pinref part="JP6" gate="G$1" pin="9"/>
+<pinref part="IC4" gate="1" pin="(OC1A/PCINT5)PB5"/>
+<wire x1="190.5" y1="198.12" x2="208.28" y2="198.12" width="0.1524" layer="91"/>
+<label x="195.58" y="198.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="4" class="0">
 <segment>
-<wire x1="215.9" y1="88.9" x2="190.5" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="88.9" x2="215.9" y2="127" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="127" x2="215.9" y2="127" width="0.1524" layer="91"/>
-<label x="193.04" y="89.535" size="1.778" layer="95"/>
+<wire x1="243.84" y1="127" x2="226.06" y2="127" width="0.1524" layer="91"/>
 <label x="226.695" y="127.635" size="1.778" layer="95"/>
 <pinref part="PWML" gate="G$1" pin="5"/>
-<pinref part="IC4" gate="1" pin="(OC0B)PG5"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="1" pin="PH1(TXD2)"/>
+<wire x1="119.38" y1="78.74" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
+<label x="101.6" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="24" class="0">
 <segment>
-<wire x1="205.74" y1="213.36" x2="190.5" y2="213.36" width="0.1524" layer="91"/>
-<label x="193.04" y="213.36" size="1.778" layer="95"/>
-<pinref part="IC4" gate="1" pin="(AD2)PA2"/>
+<wire x1="330.2" y1="198.12" x2="345.44" y2="198.12" width="0.1524" layer="91"/>
+<label x="332.74" y="198.12" size="1.778" layer="95"/>
+<pinref part="CON2" gate="C" pin="6"/>
 </segment>
 <segment>
-<wire x1="345.44" y1="200.66" x2="330.2" y2="200.66" width="0.1524" layer="91"/>
-<label x="332.74" y="200.66" size="1.778" layer="95"/>
-<pinref part="CON2" gate="C" pin="5"/>
-</segment>
-</net>
-<net name="45" class="0">
-<segment>
-<wire x1="96.52" y1="154.94" x2="119.38" y2="154.94" width="0.1524" layer="91"/>
-<label x="96.52" y="154.94" size="1.778" layer="95"/>
-<pinref part="IC4" gate="1" pin="PL4(OC5B)"/>
-</segment>
-<segment>
-<wire x1="330.2" y1="208.28" x2="345.44" y2="208.28" width="0.1524" layer="91"/>
-<label x="332.74" y="208.28" size="1.778" layer="95"/>
-<pinref part="CON2" gate="C" pin="2"/>
+<wire x1="215.9" y1="88.9" x2="190.5" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="1" pin="(OC0B)PG5"/>
+<label x="193.04" y="89.535" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="46" class="0">
 <segment>
-<wire x1="119.38" y1="152.4" x2="96.52" y2="152.4" width="0.1524" layer="91"/>
-<label x="96.52" y="152.4" size="1.778" layer="95"/>
-<pinref part="IC4" gate="1" pin="PL3(OC5A)"/>
+<wire x1="190.5" y1="195.58" x2="208.28" y2="195.58" width="0.1524" layer="91"/>
+<label x="195.58" y="195.58" size="1.778" layer="95"/>
+<pinref part="IC4" gate="1" pin="(OC2A/PCINT4)PB4"/>
 </segment>
 <segment>
 <pinref part="IC9" gate="G$1" pin="FIN"/>
@@ -6416,15 +6387,6 @@ Stable with 2*1uF ceramic capacitors</description>
 <pinref part="IC8" gate="G$1" pin="FIN"/>
 <wire x1="320.04" y1="276.86" x2="304.8" y2="276.86" width="0.1524" layer="91"/>
 <label x="304.8" y="276.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="13" class="0">
-<segment>
-<wire x1="210.82" y1="203.2" x2="236.22" y2="203.2" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="203.2" x2="210.82" y2="203.2" width="0.1524" layer="91"/>
-<label x="215.9" y="203.835" size="1.6764" layer="95"/>
-<pinref part="JP6" gate="G$1" pin="5"/>
-<pinref part="IC4" gate="1" pin="(OC0A/OC1C/PCINT7)PB7"/>
 </segment>
 </net>
 <net name="XTAL2" class="0">
@@ -6611,9 +6573,9 @@ Stable with 2*1uF ceramic capacitors</description>
 <label x="193.04" y="210.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="330.2" y1="198.12" x2="345.44" y2="198.12" width="0.1524" layer="91"/>
-<label x="332.74" y="198.12" size="1.778" layer="95"/>
-<pinref part="CON2" gate="C" pin="6"/>
+<wire x1="330.2" y1="195.58" x2="345.44" y2="195.58" width="0.1524" layer="91"/>
+<label x="332.74" y="195.58" size="1.778" layer="95"/>
+<pinref part="CON2" gate="C" pin="7"/>
 </segment>
 </net>
 <net name="22" class="0">
@@ -6621,11 +6583,6 @@ Stable with 2*1uF ceramic capacitors</description>
 <pinref part="IC4" gate="1" pin="(AD0)PA0"/>
 <wire x1="190.5" y1="208.28" x2="205.74" y2="208.28" width="0.1524" layer="91"/>
 <label x="193.04" y="208.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="330.2" y1="195.58" x2="345.44" y2="195.58" width="0.1524" layer="91"/>
-<label x="332.74" y="195.58" size="1.778" layer="95"/>
-<pinref part="CON2" gate="C" pin="7"/>
 </segment>
 </net>
 <net name="+3V6" class="0">
@@ -6905,14 +6862,14 @@ Stable with 2*1uF ceramic capacitors</description>
 </net>
 <net name="71" class="0">
 <segment>
-<pinref part="IC4" gate="1" pin="PH2(XCK2)"/>
-<wire x1="119.38" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91"/>
-<label x="96.52" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="IC9" gate="G$1" pin="RIN"/>
 <wire x1="383.54" y1="271.78" x2="368.3" y2="271.78" width="0.1524" layer="91"/>
 <label x="368.3" y="271.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="1" pin="(SS/PCINT0)PB0"/>
+<wire x1="190.5" y1="185.42" x2="208.28" y2="185.42" width="0.1524" layer="91"/>
+<label x="193.04" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="29" class="0">
@@ -6929,26 +6886,26 @@ Stable with 2*1uF ceramic capacitors</description>
 </net>
 <net name="26" class="0">
 <segment>
-<pinref part="IC4" gate="1" pin="(AD4)PA4"/>
-<wire x1="190.5" y1="218.44" x2="205.74" y2="218.44" width="0.1524" layer="91"/>
-<label x="193.04" y="218.44" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="330.2" y1="203.2" x2="345.44" y2="203.2" width="0.1524" layer="91"/>
 <label x="332.74" y="203.2" size="1.778" layer="95"/>
 <pinref part="CON2" gate="C" pin="4"/>
 </segment>
+<segment>
+<wire x1="208.28" y1="127" x2="190.5" y2="127" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="1" pin="(OC3B/INT4)PE4"/>
+<label x="193.04" y="127" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="27" class="0">
-<segment>
-<pinref part="IC4" gate="1" pin="(AD5)PA5"/>
-<wire x1="190.5" y1="220.98" x2="205.74" y2="220.98" width="0.1524" layer="91"/>
-<label x="193.04" y="220.98" size="1.778" layer="95"/>
-</segment>
 <segment>
 <wire x1="330.2" y1="205.74" x2="345.44" y2="205.74" width="0.1524" layer="91"/>
 <label x="332.74" y="205.74" size="1.778" layer="95"/>
 <pinref part="CON2" gate="C" pin="3"/>
+</segment>
+<segment>
+<wire x1="208.28" y1="129.54" x2="190.5" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="1" pin="(OC3C/INT5)PE5"/>
+<label x="193.04" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="75" class="0">
@@ -7080,6 +7037,70 @@ Stable with 2*1uF ceramic capacitors</description>
 <pinref part="D4" gate="G$1" pin="K"/>
 <wire x1="358.14" y1="71.12" x2="360.68" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="71.12" x2="360.68" y2="73.66" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="12" class="0">
+<segment>
+<pinref part="JP6" gate="G$1" pin="6"/>
+<wire x1="236.22" y1="200.66" x2="215.9" y2="200.66" width="0.1524" layer="91"/>
+<label x="215.9" y="200.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="13" class="0">
+<segment>
+<pinref part="JP6" gate="G$1" pin="5"/>
+<wire x1="236.22" y1="203.2" x2="215.9" y2="203.2" width="0.1524" layer="91"/>
+<label x="215.9" y="203.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="11" class="0">
+<segment>
+<pinref part="JP6" gate="G$1" pin="7"/>
+<wire x1="236.22" y1="198.12" x2="215.9" y2="198.12" width="0.1524" layer="91"/>
+<label x="215.9" y="198.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="1" pin="(OC0A/OC1C/PCINT7)PB7"/>
+<wire x1="190.5" y1="203.2" x2="208.28" y2="203.2" width="0.1524" layer="91"/>
+<label x="195.58" y="203.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="25" class="0">
+<segment>
+<wire x1="208.28" y1="124.46" x2="190.5" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="IC4" gate="1" pin="(OC3A/AIN1)PE3"/>
+<label x="193.04" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="345.44" y1="200.66" x2="330.2" y2="200.66" width="0.1524" layer="91"/>
+<label x="332.74" y="200.66" size="1.778" layer="95"/>
+<pinref part="CON2" gate="C" pin="5"/>
+</segment>
+</net>
+<net name="OC_PWM1" class="0">
+<segment>
+<pinref part="IC4" gate="1" pin="PH3(OC4A)"/>
+<wire x1="119.38" y1="83.82" x2="96.52" y2="83.82" width="0.1524" layer="91"/>
+<label x="109.22" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="OC_PWM2" class="0">
+<segment>
+<pinref part="IC4" gate="1" pin="PL4(OC5B)"/>
+<wire x1="119.38" y1="154.94" x2="99.06" y2="154.94" width="0.1524" layer="91"/>
+<label x="99.06" y="154.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="28" class="0">
+<segment>
+<pinref part="CON2" gate="C" pin="2"/>
+<wire x1="330.2" y1="208.28" x2="345.44" y2="208.28" width="0.1524" layer="91"/>
+<label x="332.74" y="208.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="1" pin="PL3(OC5A)"/>
+<wire x1="119.38" y1="152.4" x2="99.06" y2="152.4" width="0.1524" layer="91"/>
+<label x="99.06" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
