@@ -5,3 +5,5 @@
 
 
 /3D/OldVersions
+/simulate/*.raw
+/simulate/*.log
