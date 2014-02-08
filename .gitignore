@@ -1,9 +1,0 @@
-/3D/*.gcode
-*.s#?
-*.b#?
-/3D/test.scad
-
-
-/3D/OldVersions
-/simulate/*.raw
-/simulate/*.log
