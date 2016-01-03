@@ -1,5 +1,5 @@
-use <lego_servo_arm.scad>
+use <lego_servo_arm_round.scad>
 
 $fn=50;
 
-lego_servo_arm(teeth=25); 
+lego_servo_arm_round(teeth=25); 

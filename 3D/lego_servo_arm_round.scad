@@ -5,7 +5,7 @@ infinity=1000;
 d_base=10;
 d = lego*3;
 
-module lego_servo_arm(teeth=25, ds1=6, ds2=5.5)
+module lego_servo_arm_round(teeth=25, ds1=6, ds2=5.5)
 {
 	difference()
 	{
@@ -25,4 +25,4 @@ module lego_servo_arm(teeth=25, ds1=6, ds2=5.5)
 }
 
 $fn=50;
-lego_servo_arm(); 
+lego_servo_arm_round(); 
